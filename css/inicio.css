@@ -55,7 +55,7 @@ ul  { list-style: none; }
 }
 .mobile-menu.open { transform: translateX(0); }
 .mobile-menu ul { display: flex; flex-direction: column; align-items: center; gap: 0.1rem; }
-.mobile-menu a { display: block; font-family: var(--fh); font-weight: 700; font-size: clamp(2.2rem, 10vw, 3.6rem); color: var(--black); padding: 0.2em 0; transition: color 0.2s; }
+.mobile-menu a { display: block; font-family: var(--fh); font-weight: 700; font-size: clamp(1.3rem, 6vw, 1.8rem); color: var(--black); padding: 0.2em 0; transition: color 0.2s; }
 .mobile-menu a:hover { color: var(--red); }
 
 /* ─── Layout ──────────────────────── */
@@ -197,8 +197,10 @@ main { padding-top: var(--nav-h); }
   .mobile-menu { display: flex; }
   .section { padding: 4.5rem 0 3.5rem; }
   .sobre-header { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
-  .footer { flex-direction: column; text-align: center; }
-  .footer-links { flex-wrap: wrap; justify-content: center; }
+  .footer { flex-direction: column; text-align: center; gap: 1.5rem; padding: 1.8rem 2rem; }
+  .footer-name { flex: unset; margin: 0; }
+  .footer-links { flex: unset; justify-content: center; }
+  .footer-copy { flex: unset; text-align: center; }
   .cookie-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .cookie-banner button { align-self: stretch; text-align: center; }
   .img-inline { max-width: 100%; }
