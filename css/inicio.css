@@ -206,3 +206,20 @@ main { padding-top: var(--nav-h); }
   .img-inline { max-width: 100%; }
 }
 @media (min-width: 681px) { .mobile-menu { display: none !important; } }
+
+.label-tag {
+  display: inline-block;
+  font-family: var(--fh);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+@media (max-width: 680px) {
+  .label-tag {
+    font-size: 0.7rem;
+  }
+}
