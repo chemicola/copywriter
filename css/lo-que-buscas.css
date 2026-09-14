@@ -87,7 +87,14 @@ main { padding-top: var(--nav-h); }
   line-height: 1.8;
   color: #111111;
 }
-.texto strong { color: var(--black); font-weight: 600; }
+.texto strong {
+  color: var(--black);
+  font-weight: 600;
+}
+.text-underline {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
 
 .warning-box {
   border: 1px solid var(--border);
