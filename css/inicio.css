@@ -97,6 +97,10 @@ main { padding-top: var(--nav-h); }
   color: var(--black);
   font-weight: 600;
 }
+.text-underline {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
 
 /* H2 dentro del texto */
 .texto-h2 {
