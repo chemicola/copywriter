@@ -74,22 +74,6 @@ main { padding-top: var(--nav-h); }
   margin-bottom: 2.5rem;
 }
 
-/* ─── Cabecera Sobre mí ───────────── */
-.sobre-header {
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
-  margin-bottom: 3rem;
-}
-.sobre-header .headline { margin-bottom: 0; }
-.foto {
-  width: 120px; height: 120px; flex-shrink: 0;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  background: var(--border);
-}
-
 /* ─── Texto LinkedIn-style ────────── */
 .texto {
   display: flex;
@@ -99,11 +83,22 @@ main { padding-top: var(--nav-h); }
 }
 .texto p {
   font-family: var(--fb);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #111111;
 }
-.texto strong { color: var(--black); font-weight: 600; }
+.texto-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.texto strong {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
 
 /* H2 dentro del texto */
 .texto-h2 {
@@ -113,13 +108,6 @@ main { padding-top: var(--nav-h); }
   letter-spacing: -0.015em;
   color: var(--black);
   margin-top: 0.6rem;
-}
-
-/* Imagen inline (Bob Esponja) */
-.img-inline {
-  max-width: 260px;
-  border-radius: 8px;
-  margin: 0.6rem 0;
 }
 
 /* Enlace inline en texto */
@@ -196,14 +184,12 @@ main { padding-top: var(--nav-h); }
   .burger    { display: flex; }
   .mobile-menu { display: flex; }
   .section { padding: 4.5rem 0 3.5rem; }
-  .sobre-header { flex-direction: column; align-items: center; gap: 1.2rem; }
   .footer { flex-direction: column; text-align: center; gap: 1.5rem; padding: 1.8rem 2rem; }
   .footer-name { flex: unset; margin: 0; }
   .footer-links { flex: unset; justify-content: center; }
   .footer-copy { flex: unset; text-align: center; }
   .cookie-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .cookie-banner button { align-self: stretch; text-align: center; }
-  .img-inline { max-width: 100%; }
 }
 @media (min-width: 681px) { .mobile-menu { display: none !important; } }
 
