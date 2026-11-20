@@ -33,10 +33,10 @@ ul  { list-style: none; }
   max-width: 1100px; margin: 0 auto; padding: 0 2rem;
   height: var(--nav-h); display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo { font-family: var(--fh); font-weight: 700; font-size: 1.1rem; transition: color 0.2s; }
+.nav-logo { font-family: var(--fh); font-weight: 700; font-size: 1.15rem; transition: color 0.2s; }
 .nav-logo:hover { color: var(--red); }
 .nav-links { display: flex; gap: 2.4rem; }
-.nav-link { font-family: var(--fb); font-size: 0.98rem; font-weight: 500; color: var(--gray); position: relative; transition: color 0.2s; }
+.nav-link { font-family: var(--fb); font-size: 1.03rem; font-weight: 500; color: var(--gray); position: relative; transition: color 0.2s; }
 .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1.5px; background: var(--red); transition: width 0.2s var(--ease); }
 .nav-link:hover, .nav-link.active { color: var(--black); }
 .nav-link.active::after, .nav-link:hover::after { width: 100%; }
@@ -83,7 +83,7 @@ main { padding-top: var(--nav-h); }
 }
 .texto p {
   font-family: var(--fb);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #111111;
 }
@@ -106,7 +106,7 @@ main { padding-top: var(--nav-h); }
 .texto-h2 {
   font-family: var(--fh);
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   letter-spacing: -0.015em;
   color: var(--black);
   margin-top: 0.6rem;
@@ -153,11 +153,11 @@ main { padding-top: var(--nav-h); }
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 4rem;
 }
-.footer-name { font-family: var(--fh); font-weight: 700; font-size: 0.95rem; color: var(--black); flex: 1; }
+.footer-name { font-family: var(--fh); font-weight: 700; font-size: 1rem; color: var(--black); flex: 1; }
 .footer-links { display: flex; gap: 2rem; justify-content: center; }
-.footer-links a { font-family: var(--fb); font-size: 0.88rem; color: var(--gray); transition: color 0.2s; }
+.footer-links a { font-family: var(--fb); font-size: 0.93rem; color: var(--gray); transition: color 0.2s; }
 .footer-links a:hover { color: var(--black); }
-.footer-copy { font-family: var(--fb); font-size: 0.95rem; color: var(--gray); flex: 1; text-align: right; }
+.footer-copy { font-family: var(--fb); font-size: 1rem; color: var(--gray); flex: 1; text-align: right; }
 
 /* ─── Cookie banner ───────────────── */
 .cookie-banner {
@@ -190,28 +190,29 @@ main { padding-top: var(--nav-h); }
   .burger    { display: flex; }
   .mobile-menu { display: flex; }
   .section { padding: 4.5rem 0 3.5rem; }
+  .container { padding: 0 1.25rem; }
+  .headline { font-size: clamp(1.75rem, 8.5vw, 2.25rem); line-height: 1.12; margin-bottom: 1.8rem; }
+  .texto { gap: 0.65rem; }
+  .texto-seccion { gap: 0.65rem; margin-bottom: 0.4rem; }
+  .texto p { font-size: 1.05rem; line-height: 1.65; }
+  .texto-h2 { font-size: 1.35rem; }
   .footer { flex-direction: column; text-align: center; gap: 1.5rem; padding: 1.8rem 2rem; }
   .footer-name { flex: unset; margin: 0; }
   .footer-links { flex: unset; justify-content: center; }
   .footer-copy { flex: unset; text-align: center; }
   .cookie-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .cookie-banner button { align-self: stretch; text-align: center; }
+  .label-tag { font-size: 0.7rem; }
 }
 @media (min-width: 681px) { .mobile-menu { display: none !important; } }
 
 .label-tag {
   display: inline-block;
   font-family: var(--fh);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #666;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 1.1rem;
-}
-
-@media (max-width: 680px) {
-  .label-tag {
-    font-size: 0.7rem;
-  }
 }
