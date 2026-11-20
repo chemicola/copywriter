@@ -192,17 +192,17 @@ main { padding-top: var(--nav-h); }
   .section { padding: 4.5rem 0 3.5rem; }
   .container { padding: 0 1.25rem; }
   .headline { font-size: clamp(1.75rem, 8.5vw, 2.25rem); line-height: 1.12; margin-bottom: 1.8rem; }
-  .texto { gap: 0.65rem; }
-  .texto-seccion { gap: 0.65rem; margin-bottom: 0.4rem; }
+  .texto { gap: 0.85rem; }
+  .texto-seccion { gap: 0.85rem; margin-bottom: 0.75rem; }
   .texto p { font-size: 1.05rem; line-height: 1.65; }
-  .texto-h2 { font-size: 1.35rem; }
+  .texto-h2 { font-size: 1.35rem; margin-top: 1.1rem; }
   .footer { flex-direction: column; text-align: center; gap: 1.5rem; padding: 1.8rem 2rem; }
   .footer-name { flex: unset; margin: 0; }
   .footer-links { flex: unset; justify-content: center; }
   .footer-copy { flex: unset; text-align: center; }
   .cookie-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .cookie-banner button { align-self: stretch; text-align: center; }
-  .label-tag { font-size: 0.7rem; }
+  .label-tag { font-size: 0.65rem; }
 }
 @media (min-width: 681px) { .mobile-menu { display: none !important; } }
 
