@@ -8,7 +8,7 @@
   --fh: 'Outfit', sans-serif;
   --fb: 'DM Sans', sans-serif;
   --nav-h: 62px;
-  --w: 920px;
+  --w: 1040px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -67,7 +67,7 @@ main { padding-top: var(--nav-h); }
 .headline {
   font-family: var(--fh);
   font-weight: 700;
-  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: var(--black);
@@ -78,7 +78,7 @@ main { padding-top: var(--nav-h); }
 .texto {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.9rem;
   margin-bottom: 3rem;
 }
 .texto p {
@@ -90,7 +90,7 @@ main { padding-top: var(--nav-h); }
 .texto-seccion {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.9rem;
   margin-bottom: 0.8rem;
 }
 .texto strong {
@@ -106,10 +106,14 @@ main { padding-top: var(--nav-h); }
 .texto-h2 {
   font-family: var(--fh);
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.9rem;
   letter-spacing: -0.015em;
   color: var(--black);
   margin-top: 0.6rem;
+}
+.text-strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.08em;
 }
 
 /* Enlace inline en texto */
